@@ -1,12 +1,20 @@
 var http = require('http');
 var handle = require('./handle');
-var s = require('./name');
 
-console.log(s.name());
-//console.log(handle);
-var server = http.createServer(handle.fn);
+var events = require('events');
+//var emitter = new events.EventEmitter();
 
-server.listen(9000, function() {
+/*emitter.on('say12', say);
+
+function say() {
+    console.log("I'm saying...");
+}*/
+
+//emitter.emit('say12');
+
+var server = http.createServer(handle);
+
+server.listen(3000, function() {
  
     console.log('Server is listening at 9000 port.')
 }); 

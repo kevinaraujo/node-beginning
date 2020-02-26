@@ -1,7 +1,21 @@
+var queryString = require('querystring');
+
 function handle (request, response) {
     
     response.writeHead(200, {
         'Content-Type': 'text/html'
+    });
+
+    var body = '';
+    request.on('data', function(data){
+        body += data.toString();
+        console.log(body);
+    });
+
+    request.on('end', function() {
+        var decode = queryString.parse(body);
+
+        console.log(decode);
     });
 
     response.write('<!DOCTYPE "html">');
@@ -9,6 +23,5 @@ function handle (request, response) {
 
     response.end();
 }
- exports.fn = handle;
 
  module.exports = handle;
