@@ -1,16 +1,7 @@
 var http = require('http');
 var handle = require('./handle');
 
-var events = require('events');
-//var emitter = new events.EventEmitter();
-
-/*emitter.on('say12', say);
-
-function say() {
-    console.log("I'm saying...");
-}*/
-
-//emitter.emit('say12');
+require('console-log-hello-world');
 
 var server = http.createServer(handle);
 
