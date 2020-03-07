@@ -1,5 +1,5 @@
 {
-  "name": "node-son",
+  "name": "node-beginning",
   "version": "1.0.0",
   "description": "First project in node",
   "main": "app.js",
@@ -9,7 +9,8 @@
   "keywords": [
     "nodejs",
     "init",
-    "nodejs"
+    "kevin",
+    "nodejs" 
   ],
   "author": "Kevin Araújo",
   "license": "ISC",
