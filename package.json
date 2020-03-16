@@ -1,22 +1,22 @@
 {
-  "name": "node-beginning",
+  "name": "express-kevin",
   "version": "1.0.0",
-  "description": "First project in node",
-  "main": "app.js",
+  "description": "express, scholofnet",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "nodejs",
-    "init",
-    "kevin",
-    "nodejs"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinaraujo/node-beginning.git"
+  },
   "author": "Kevin Araújo",
   "license": "ISC",
-  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/kevinaraujo/node-beginning/issues"
+  },
+  "homepage": "https://github.com/kevinaraujo/node-beginning#readme",
   "dependencies": {
-    "console-log-hello-world": "^1.0.3",
-    "websocket": "^1.0.31"
+    "express": "^4.17.1"
   }
 }
